@@ -11,7 +11,7 @@ Follow these steps to install and run the Electron app:
 npm install electron --save-dev
 ```
 
-2. Create a new file named electron.js in the root of your project:
+2. Create a new file named electron.js in the root of your project. In this example, it will be created in the src folder:
 
 3. Add the following code to electron.js:
 ```javascript
@@ -43,7 +43,7 @@ app.on('window-all-closed', function () {
 ```json
 "scripts": {
   "start": "react-scripts start",
-  "electron": "electron electron.js"
+  "electron ./src/electron.js",
 }
 ```
 
